@@ -1,0 +1,87 @@
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Node Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #c3c396, #7d8ba1);
+            font-family: Arial, sans-serif;
+        }
+
+        .div {
+            width: 90%;
+            max-width: 400px;
+            height: auto;
+            background: linear-gradient(50deg, #af91b4, #99b599, #8feae8);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: white;
+            box-shadow: inset 2px 1px 99px 60px rgb(55, 54, 54);
+            /* box-shadow: 12px 12px 10px 0px black; */
+        }
+
+        h1 {
+            margin: 0 0 20px;
+            font-size: 24px;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #558397;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 10px 10px 16px 0px black;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2575fc;
+        }
+
+        @media (max-width: 768px) {
+            .div {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            input[type="text"],
+            input[type="submit"] {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1>Weather Condition</h1>
+        <form action="/" method="post">
+            City Name: <input type="text" name="cityName">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
