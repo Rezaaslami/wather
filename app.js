@@ -55,19 +55,6 @@ app.listen(4000,function(){
     console.log("the app is listening on port 4000");
 });
 
-//     </style>
-</head>
-<body>
-    <div class="div">
-        <h1>Weather Condition</h1>
-        <form action="/" method="post">
-            City Name: <input type="text" name="cityName">
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-</body>
-
-
 
 
 
