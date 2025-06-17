@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended:false}));
 app.use(bodyParser.json());
 
 
-//*********** ********************************/
+
 app.get("/", function(req, res){
     res.sendFile(__dirname+"/index.html");
 });
@@ -39,45 +39,13 @@ app.post("/", function(req, res){
         res.send(); // general
 
     });
-   });
-
-
-
-
-
-    
+   })
 
 });
 
-// ************************************
+
 
 app.listen(4000,function(){
     console.log("the app is listening on port 4000");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
